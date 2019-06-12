@@ -15,12 +15,12 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
+        <module>springboot-hello</module>
+        <module>springboot-web</module>
         <module>springboot-mybatis</module>
         <module>springboot-cache</module>
         <module>springboot-elasticsearch</module>
-        <module>springboot-hello</module>
         <module>springboot-mongodb</module>
-        <module>springboot-web</module>
     </modules>
 
     <build>
