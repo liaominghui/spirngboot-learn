@@ -1,5 +1,4 @@
 package com.lmh.springboot.hello.config;
-
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
@@ -12,10 +11,8 @@ import org.springframework.stereotype.Component;
  * Description: TODO
  * Version:1.0.0
  */
-@Component
-@PropertySource(value = "config.properties")
+@ConfigurationProperties()
 public class PropertiesConfig {
-
 
     private String name;
 

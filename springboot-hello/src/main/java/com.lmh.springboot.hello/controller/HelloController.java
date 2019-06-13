@@ -1,5 +1,7 @@
 package com.lmh.springboot.hello.controller;
 
+import com.lmh.springboot.hello.limit.TPSLimiter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,8 +17,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("springboot")
 public class HelloController {
 
+
+    @Autowired
+    private TPSLimiter limiter;
+
     @RequestMapping("/hello")
     public String hello() {
+        System.out.println(limiter.isAllowable("hello", 10, 6000l));
         return "Hello World";
     }
 }
