@@ -1,6 +1,7 @@
 package com.lmh.springboot.hello.limit;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
@@ -11,6 +12,13 @@ import java.util.concurrent.ConcurrentMap;
 public class DefaultTPSLimiter implements TPSLimiter {
 
     private final ConcurrentMap<String, StatItem> stats = new ConcurrentHashMap<String, StatItem>();
+
+
+
+
+private List<Integer> ssss;
+
+
 
     @Override
     public boolean isAllowable(String serviceKey, int rate, long interval) {
