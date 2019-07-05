@@ -18,6 +18,8 @@ public class DefaultTPSLimiter implements TPSLimiter {
 
 private List<Integer> ssss;
 
+    private List<Integer> ssss1;
+
 
 
     @Override
