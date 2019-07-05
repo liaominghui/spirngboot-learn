@@ -13,14 +13,10 @@ public class DefaultTPSLimiter implements TPSLimiter {
 
     private final ConcurrentMap<String, StatItem> stats = new ConcurrentHashMap<String, StatItem>();
 
-
-
-
-private List<Integer> ssss;
+    private List<Integer> ssss;
 
     private List<Integer> ssss1;
-
-
+    
 
     @Override
     public boolean isAllowable(String serviceKey, int rate, long interval) {
